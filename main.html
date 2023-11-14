@@ -9,11 +9,11 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			let largest = Number.MIN_VALUE;
-			let secondLargest = Number.MIN_VALUE;
+			let largest = -Infinity;
+			let secondLargest = -Infinity;
 
 			if (arr.length < 2) {
-				return `-Infinity`;
+				return `undefined`;
 			}
 			
 			for (let i = 0; i < arr.length; i++) {
